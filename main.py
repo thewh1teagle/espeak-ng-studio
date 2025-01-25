@@ -24,7 +24,7 @@ def phonemize_and_speak(text, speak, language, compile):
     return phonemes
 
 def create_ui():
-    with gr.Blocks(theme=gr.themes.Soft()) as ui:
+    with gr.Blocks(theme=gr.themes.Soft(font=[gr.themes.GoogleFont('Roboto')])) as ui:
         text_input = gr.TextArea(label="Input Text", placeholder="Enter text to phonemize...", rtl=IS_RTL)
         language_input = gr.Textbox(label="Language", value=DEFAULT_LANGUAGE, placeholder="Enter language code")
         speak_checkbox = gr.Checkbox(label="Speak Text", value=True)
