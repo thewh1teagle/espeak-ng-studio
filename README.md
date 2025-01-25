@@ -2,6 +2,8 @@
 
 Enhance espeak-ng phonemes easily
 
+<img src="https://github.com/user-attachments/assets/c6dfbc10-8cb1-4b8b-8e6c-9f78e7e186b0" width=600>
+
 ## Setup
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (Python)
