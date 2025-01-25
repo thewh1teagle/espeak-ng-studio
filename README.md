@@ -4,6 +4,8 @@ Enhance espeak-ng phonemes easily
 
 ## Setup
 
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (Python)
+
 Prepare espeak-ng binary and espeak-ng repository
 
 ```console
