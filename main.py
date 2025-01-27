@@ -5,11 +5,11 @@ from pathlib import Path
 espeak = EspeakNG()
 
 # Change to True if your language is RTL
-IS_RTL = False 
+IS_RTL = True
 # You should git clone espeak-ng to the same directory as this file
 DICTSOURCE_PATH = Path(__file__).parent / "espeak-ng" / "dictsource" 
 # Change to your language code
-DEFAULT_LANGUAGE = "en"
+DEFAULT_LANGUAGE = "he"
 
 # Store the thread to stop if needed
 def phonemize_and_speak(text, speak, language, compile):
@@ -25,7 +25,7 @@ def phonemize_and_speak(text, speak, language, compile):
 
 def create_ui():
     with gr.Blocks(theme=gr.themes.Soft(font=[gr.themes.GoogleFont('Roboto')])) as ui:
-        text_input = gr.TextArea(label="Input Text", placeholder="Enter text to phonemize...", rtl=IS_RTL)
+        text_input = gr.TextArea(label="Input Text", placeholder="Enter text to phonemize...", rtl=IS_RTL, value="Hello")
         language_input = gr.Textbox(label="Language", value=DEFAULT_LANGUAGE, placeholder="Enter language code")
         speak_checkbox = gr.Checkbox(label="Speak Text", value=True)
         compile_checkbox = gr.Checkbox(label="Compile phonemes", value=False)

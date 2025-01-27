@@ -33,10 +33,7 @@ Windows PowerShell
 
 ```console
 winget install -e --id JernejSimoncic.Wget
-winget install -e --id GnuWin32.Tar
 wget.exe https://github.com/thewh1teagle/espeak-ng-static/releases/download/v1.52/espeak-ng-static-windows-amd64.exe -O espeak-ng-bin.exe
-wget https://github.com/thewh1teagle/espeak-ng-static/releases/download/v1.52/espeak-ng-data.tar.gz
-tar xf espeak-ng-data.tar.gz
 ```
 
 Linux
@@ -45,8 +42,6 @@ Linux
 sudo apt install -y pcaudiolib wget
 wget https://github.com/thewh1teagle/espeak-ng-static/releases/download/v1.52/espeak-ng-static-linux-amd64 -O espeak-ng-bin
 chmod +x espeak-ng-bin
-wget https://github.com/thewh1teagle/espeak-ng-static/releases/download/v1.52/espeak-ng-data.tar.gz
-tar xf espeak-ng-data.tar.gz
 ```
 
 macOS
@@ -54,8 +49,6 @@ macOS
 ```console
 wget https://github.com/thewh1teagle/espeak-ng-static/releases/download/v1.52/espeak-ng-static-macos-universal -O espeak-ng-bin
 chmod +x espeak-ng-bin
-wget https://github.com/thewh1teagle/espeak-ng-static/releases/download/v1.52/espeak-ng-data.tar.gz
-tar xf espeak-ng-data.tar.gz
 ```
 
 Run
